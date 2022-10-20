@@ -47,15 +47,21 @@
 <!-- Intro -->
 
 <div class="intro">
+	<div id="menu" class="menu" data-aberto = "false">
+		<p id="menuTrigger" class="menu-trigger">
+			<i id="positivo" onclick="fecharPositivo()" class="fa fa-plus"></i>
+			<i id="negativo" onclick="fecharNegativo()" class="fa fa-minus"></i>
+		</p>
+	</div>
 <div class="intro-body">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div id="direita" class="row justify-content-center">
 			<div class="col-md-8">
 				<div class="foto">
 					<!--Aqui entra a foto da pagina inicial-->
 					<img src="assets/Fundo-Perfil.png" alt="Foto Elves">
 				</div>
-				<h1 id="brand" class="brand-heading">Elves Chissique</h1>
+				<h1 id="brand">Elves Chissique</h1>
 				<p class="intro-text">
 					<!-- Analista de BI e Professor de Programação 
 					🎓 Developer • Teacher • IT Professional 🎓-->
@@ -66,6 +72,27 @@
 				</a>
 			</div>
 		</div>
+	</div>
+	<div id="ocultar" class="Hallo">
+		<p class="logo">
+			<img src="assets/sky.png" alt="Log-tipo">
+		</p>
+		
+		<p class="Primerio">
+			Desenvolvidor <br> Front-End & Back-End
+		</p>
+		<p class="Segundo">
+			Profissional de TI com foco em Analise de Sistemas, Desenvolvimento de Sistemas, WebSites, E-commerce, Aplicativos Androide e Web...  Agora com um novo desafio: Trabalhar  Intelligencia Artificial e Big Data
+		</p>
+
+		<button onclick="Chamada()" id="btn" class="btn btn-outline-warning">Say Hello</button>
+
+		<p id="Say">
+			<input type="text" placeholder="Hello, Elves! are you ther?">
+			<input type="email" placeholder="write your email">
+			<br/>
+			<a onclick="enviar()" href=""><img src="assets/btn-enviar.png" alt="enviar"></a>
+		</p>
 	</div>
 </div>
 </div>
@@ -86,9 +113,6 @@
 			</p>
 		</div>
 	</div>
-	<div class="Hallo">
-		Say Hallo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facere natus sit quaerat eveniet, maiores voluptatibus officia vel eaque tempora reprehenderit laboriosam nam nihil id aliquam explicabo illum odit rerum?
-	</div>
 </div>
 </section>
             
@@ -106,6 +130,56 @@
 <!-- endbuild -->
 
 <script src="assets/js/theme.js"></script>
+
+<script>
+	var x = window.document.getElementById("ocultar");
+	var posit = window.document.getElementById("positivo");
+	var negat = window.document.getElementById("negativo");
+	var menuTrigger = window.document.getElementById("menuTrigger");
+	var xx = window.document.getElementById("direita");
+
+	/*area de funçoes*/
+
+	function fecharPositivo(){
+		ocultar.style.marginLeft = "0px"
+		ocultar.style.transition="1.5s"
+		posit.style.display="none"
+		negat.style.display = "inline-grid"
+		menuTrigger.style.backgroundColor="rgba(255,255,255,.7)"
+		menuTrigger.style.color = "black"
+		menuTrigger.style.transition = "1s"
+		xx.style.width= "70%"
+		xx.style.transition="1.5s"
+
+	}
+	function fecharNegativo(){
+		ocultar.style.marginLeft="-410px"
+		ocultar.style.transition="1.5s"
+		posit.style.display = "inline-grid"
+		negat.style.display = "none"
+		menuTrigger.style.backgroundColor="rgba(0,0,0,.2)"
+		menuTrigger.style.color = "rgba(255,255,255,1)"
+		menuTrigger.style.transition = "1s"
+		xx.style.width = "100%"
+		xx.style.transition="1.5s"
+		sayHello.style.opacity="0"
+
+	}
+
+	
+	var sayHello = window.document.getElementById("Say");
+	
+	function Chamada(){
+		//sayHello.style.marginLeft="55px"
+		sayHello.style.opacity="1"
+		sayHello.style.transition="4s"
+	}
+
+	function enviar(){
+		alert('Caríssimo/a a sua mensagem foi com sucesso enviada, em breve o será respondida <br/> Dear your message have been successfully sent, and will be answered shortly')
+	}
+
+</script>
 
 </body>
 

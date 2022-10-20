@@ -2,6 +2,8 @@
 Template Name: Aries HTML
 Copyright: wowthemesnet, https://www.wowthemes.net, https://bootstrapstarter.com/
 */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
 	width:100%;
@@ -157,12 +159,13 @@ a:hover,a:focus {
 .intro .intro-body {
 	display:table-cell;
 	vertical-align:middle;
+	position: relative;
 }
 .intro .intro-body .brand-heading {
-	font-size:40px;
+	font-size:30px;
 }
 .intro .intro-body .intro-text {
-	font-size:18px;
+	font-size:40px;
 }
 @media(min-width:768px) {
 	.intro {
@@ -170,9 +173,10 @@ a:hover,a:focus {
 			padding:0;
 	}
 	.intro .intro-body .brand-heading {
-			font-size:60px;
+			font-size:55px;
 			margin-top:90px;
 			margin-bottom:20px;
+			margin: auto;
 			border-top:2px solid #fff;
 			border-bottom:2px solid #fff;
 			display:inline-block;
@@ -519,10 +523,10 @@ section {
 
 .foto{
 	background-color: rgba(0,0,0,0.0);
+	position: relative;
 	width: 300px;
 	height: 300px;
 	margin: auto;
-	margin-top: -50px;
 	opacity: 0.5;
 	transition: 1s;
 }
@@ -531,9 +535,135 @@ section {
 }
 
 #brand{
-	margin-top: -10px;
+	font-size:3erm;
+	padding: 10px 0px 10px 0px;
+	border-top: #ccc 3px Solid;
+	border-bottom: #ccc 3px Solid;
+	margin-top: -20px;
+}
+#direita{
+	position: relative;
+	float: right;
+	width: 100%;
+	margin: auto;
 }
 
 .Hallo{
-	color:black
+	background-color:rgba(0,0,0,.8);
+	width:30%;
+	height: 664px;
+	float: left;
+	position: relative;
+	padding: .3em;
+	margin-left: -410px;
+	text-align: justify;
+}
+
+.Hallo .logo{
+	width: 100%;
+	margin-top: -10px;
+	/*border-bottom:2px solid rgba(255,255,255,.1);*/
+	text-align: right;
+}
+.Hallo .logo img{
+	width: 100px;
+	height: 100px;
+
+}
+
+.Hallo .Primerio{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	color:#ccc;
+}
+
+
+.Hallo .Segundo{
+	font-family: 'Bona Nova', serif;
+	font-weight: normal;
+	font-size: 1.2em;
+	color:#ccc;
+	margin-top: 0px;
+	border:1px solid #ccc;
+	padding: .5em;
+	border-radius: 2em;
+	box-shadow: 0px 3px 3px #fbc304;
+	background-color: rgba(255,255,255,.2);
+}
+#btn{
+	margin-left: 140px;
+	text-align: center;
+	border-radius: 15px;
+	
+}
+
+.Hallo input{
+
+	width: 70%;
+	margin-top: 15px;
+	background-color: rgba(255, 255, 255, 0.0);
+	border-top: rgba(0, 0, 0, 0.0);
+	border-left: rgba(0, 0, 0, 0.0);
+	border-right: rgba(0, 0, 0, 0.0);
+	border-bottom:2px solid #fbc304;
+	border-radius: 15px;
+	color:#ccc;
+	transition: 1s;
+	outline: none;
+	text-align: center;
+	font-size: 15px;
+	opacity: 1;
+
+}
+
+#Say{
+	width: 100%;
+	margin: auto;
+	opacity: 0;
+	text-align: center;
+	
+}
+
+#Say img{
+	width: 30px;
+	height: 30px;
+}
+
+.Hallo input:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media(max-width:920px) {
+	.Hallo{
+		display: none;
+	}
+	#direita{
+		float: none;
+		width: 100%;
+	}
+}
+
+.menu-trigger{
+		background-color: rgba(0, 0, 0, 0.2);
+		border: 1px solid #fbc304;
+		border-radius:.5em;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.03);
+		display: inline-grid;
+		padding-left: .3em;
+		padding-right: .3em;
+		padding-top: .2em;
+		padding-bottom: .2em;
+		cursor: pointer;
+		position: absolute;
+		z-index: 1;
+		margin: 0.5em;
+	}
+
+#negativo{
+	display: none;
 }
