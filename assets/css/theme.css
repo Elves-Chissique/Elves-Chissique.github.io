@@ -595,7 +595,7 @@ section {
 
 .Hallo .Primerio{
 	font-family: 'Kaushan Script', cursive;
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-bottom: 0px;
 	margin-top: -12%;
 	text-transform: uppercase;
@@ -609,7 +609,7 @@ section {
 .Hallo .Segundo{
 	font-family: 'Bona Nova', serif;
 	font-weight: normal;
-	font-size: 1.2em;
+	font-size: 1em;
 	color:#ccc;
 	margin-top: 0px;
 	border:1px solid #ccc;
@@ -662,19 +662,41 @@ section {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media(min-width:1420px){
+	.Hallo .Primerio{
+		margin-top: 0%;
+	}
+	.Hallo .Primerio{
+		font-size: 2.1em;
+	}
+
+	.Hallo .Segundo{
+		font-size: 1.3em;
+	}
+
+	.btn{
+		margin-top: 0%;
+	}
+	.Hallo .Segundo{
+		margin-top: 4%;
+	}
+
+}
+
 
 @media(max-width:920px) {
-	.Hallo{
-		display: none;
+	#menuTrigger{
+	
 	}
+	/*.Hallo{
+		display: none;
+	}*/
 	#direita{
 		float: none;
 		width: 100%;
 	}
 
-	.menu-trigger{
-		display: none;
-	}
+	
 }
 
 .menu-trigger{
