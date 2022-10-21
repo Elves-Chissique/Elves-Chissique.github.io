@@ -551,24 +551,45 @@ section {
 .Hallo{
 	background-color:rgba(0,0,0,.8);
 	width:30%;
-	height: 664px;
+	height: 100%;
 	float: left;
 	position: relative;
 	padding: .3em;
-	margin-left: -410px;
+	margin-left: -100%;
+	margin-top: 0%;
 	text-align: justify;
 }
 
 .Hallo .logo{
 	width: 100%;
 	margin-top: -10px;
-	/*border-bottom:2px solid rgba(255,255,255,.1);*/
-	text-align: right;
+	text-align:center;
+	display: grid;
 }
-.Hallo .logo img{
+#Logo{
+	display:block;
 	width: 100px;
 	height: 100px;
+	float: right;
+	margin-top: -90px;
+	opacity: 0;
+	transition: .5s;
+}
+#Logo:hover{
+	opacity: 0;
+}
+/*Aqui entra a estilização de carousel*/
 
+#carouselExampleIndicators{
+	margin-top: -3.3%;
+	width:70%;
+	margin: auto;
+}
+
+#carouselExampleIndicators img{
+	border: 3px 3px 3px 3px solid #fbc304;
+	height: 10em;
+	border-radius: 15px;
 }
 
 .Hallo .Primerio{
@@ -576,7 +597,7 @@ section {
 	font-size: 2em;
 	text-align: center;
 	margin-bottom: 0px;
-	margin-top: 15px;
+	margin-top: 5px;
 	text-transform: uppercase;
 	color:#ccc;
 	text-shadow:3px 3px 3px #fbc304;
@@ -595,11 +616,11 @@ section {
 	box-shadow: 0px 3px 3px #fbc304;
 	background-color: rgba(255,255,255,.2);
 }
-#btn{
-	margin-left: 140px;
+.btn{
 	text-align: center;
+	margin: auto;
 	border-radius: 15px;
-	
+	display: block;	
 }
 
 .Hallo input{
@@ -681,3 +702,4 @@ section {
 	padding: 2px;
 	border-radius: 50%;
 }
+
