@@ -694,6 +694,10 @@ section {
 		font-size: 1.5em;
 	}
 
+	.Hallo input{
+		width: 95%;
+	}
+
 	.btn{
 		margin-top: 0.2em;
 	}
