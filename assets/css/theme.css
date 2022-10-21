@@ -661,7 +661,7 @@ section {
 .Hallo input:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
-
+/*Rensponsavidade por media querie --NESTE PONOT PARA PLASMAS E MUNITORES GRANDES*/
 @media(min-width:1420px){
 	.Hallo .Primerio{
 		margin-top: 0%;
@@ -683,14 +683,33 @@ section {
 
 }
 
-
+/*Rensponsavidade por media querie --NESTE PONOT PARA MOBILE*/
 @media(max-width:920px) {
-	#menuTrigger{
+	#carouselExampleIndicators{
+		top: 0.5px;
+	}
+
+	.Hallo .Primerio{
+		margin-top: 1em;
+		font-size: 1.5em;
+	}
+
+	.btn{
+		margin-top: 0.2em;
+	}
+
+	#menuTrigger{ /*Este é o menu para o sistema normal*/
+		display: none;
+	}
+	#menuTrigger1{ /*Esse é o menu para o sistema Mobile*/
+		display:inline-grid;
 		margin-top: -90px;
 	}
-	/*.Hallo{
-		display: none;
-	}*/
+	.Hallo{
+		width: 80%;
+		margin-top: -460px;
+		background-color: #000;
+	}
 	#direita{
 		float: none;
 		width: 100%;
@@ -703,23 +722,41 @@ section {
 	
 }
 
-.menu-trigger{
-		background-color: rgba(0, 0, 0, 0.2);
-		border: 1px solid #fbc304;
-		border-radius:.5em;
-		box-shadow: 2px 2px 2px rgba(0,0,0,0.03);
-		display: inline-grid;
-		padding-left: .3em;
-		padding-right: .3em;
-		padding-top: .2em;
-		padding-bottom: .2em;
-		cursor: pointer;
-		position: absolute;
-		z-index: 1;
-		margin: 0.5em;
-	}
+.menu-trigger{ /*Esse é o menu para Sistema Normal*/
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid #fbc304;
+	border-radius:.5em;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.03);
+	display: inline-grid;
+	padding-left: .3em;
+	padding-right: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	margin: 0.5em;
+}
+.menu-trigger1{ /*Esse é o menu para Sistema Mobile*/
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid #fbc304;
+	border-radius:.5em;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.03);
+	display:none;
+	padding-left: .3em;
+	padding-right: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	margin: 0.5em;
+}
 
 #negativo{
+	display: none;
+}
+#negativo1{
 	display: none;
 }
 

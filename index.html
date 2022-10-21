@@ -59,9 +59,16 @@
 
 <div class="intro">
 	<div id="menu" class="menu" data-aberto = "false">
+		<!--Botão de menu para o sistema Normal-->
 		<p id="menuTrigger" class="menu-trigger">
 			<i id="positivo" onclick="fecharPositivo()" class="fa fa-plus"></i>
 			<i id="negativo" onclick="fecharNegativo()" class="fa fa-minus"></i>
+		</p>
+
+		<!--Botão de menu para o sistema Mobile-->
+		<p id="menuTrigger1" class="menu-trigger1">
+			<i id="positivo1" onclick="fecharPositivo1()" class="fa fa-plus"></i>
+			<i id="negativo1" onclick="fecharNegativo1()" class="fa fa-minus"></i>
 		</p>
 	</div>
 <div class="intro-body">
@@ -177,8 +184,11 @@
 
 <script>
 	var x = window.document.getElementById("ocultar");
-	var posit = window.document.getElementById("positivo");
-	var negat = window.document.getElementById("negativo");
+	var posit = window.document.getElementById("positivo"); //menu Normal
+	var negat = window.document.getElementById("negativo");//menu Normal
+
+	var posit1 = window.document.getElementById("positivo1");//menu Mobile
+	var negat1 = window.document.getElementById("negativo1"); //menu Mobile
 	var menuTrigger = window.document.getElementById("menuTrigger");
 	var xx = window.document.getElementById("direita");
 	//var fot = window.document.getElementById("foto");
@@ -207,6 +217,33 @@
 		menuTrigger.style.transition = "1s"
 		xx.style.width = "100%"
 		xx.style.transition="1.5s"
+		sayHello.style.opacity="0"
+
+	}
+
+// Aqui começa as funções para o botão de menu para Mobile
+	function fecharPositivo1(){
+		ocultar.style.marginLeft = "0%"
+		ocultar.style.transition="1.5s"
+		posit1.style.display="none"
+		negat1.style.display = "inline-grid"
+		menuTrigger.style.backgroundColor="rgba(255,255,255,.7)"
+		menuTrigger.style.color = "black"
+		menuTrigger.style.transition = "1s"
+		//xx.style.width= "70%"
+		//xx.style.transition="1.5s"
+
+	}
+	function fecharNegativo1(){
+		ocultar.style.marginLeft="-100%"
+		ocultar.style.transition="1.5s"
+		posit1.style.display = "inline-grid"
+		negat1.style.display = "none"
+		menuTrigger.style.backgroundColor="rgba(0,0,0,.2)"
+		menuTrigger.style.color = "rgba(255,255,255,1)"
+		menuTrigger.style.transition = "1s"
+		//xx.style.width = "100%"
+		//xx.style.transition="1.5s"
 		sayHello.style.opacity="0"
 
 	}
