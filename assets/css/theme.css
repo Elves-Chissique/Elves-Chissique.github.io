@@ -686,7 +686,7 @@ section {
 
 @media(max-width:920px) {
 	#menuTrigger{
-	
+		margin-top: -10px;
 	}
 	/*.Hallo{
 		display: none;
