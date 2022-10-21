@@ -518,7 +518,7 @@ section {
 
 .cabeçalho h1{
 	text-transform: none;
-	text-shadow:red 2px -1px 5px;
+	text-shadow:rgba(255, 255, 255, 0.486) 3px 3px 5px;
 }
 
 .foto{
@@ -579,6 +579,7 @@ section {
 	margin-top: 15px;
 	text-transform: uppercase;
 	color:#ccc;
+	text-shadow:3px 3px 3px #fbc304;
 }
 
 
@@ -666,4 +667,17 @@ section {
 
 #negativo{
 	display: none;
+}
+
+.xx{
+	margin: auto;
+	text-align: center;
+	color:#000;
+}
+
+.xx a{
+	color: #000;
+	border: 1px solid black;
+	padding: 2px;
+	border-radius: 50%;
 }
