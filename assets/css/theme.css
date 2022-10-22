@@ -671,22 +671,25 @@ section {
 	}
 
 	.Hallo .Segundo{
+		margin-top: 4%;
 		font-size: 1.3em;
+	}
+
+	#email{
+		margin-top:40px;
 	}
 
 	.btn{
 		margin-top: 0%;
 	}
-	.Hallo .Segundo{
-		margin-top: 4%;
-	}
-
 }
 
 /*Rensponsavidade por media querie --NESTE PONOT PARA MOBILE*/
 @media(max-width:920px) {
 	#carouselExampleIndicators{
 		top: 0.5px;
+		width: 90%;
+		margin-left: 8.5%;
 	}
 
 	.Hallo .Primerio{
@@ -710,13 +713,16 @@ section {
 		margin-top: -90px;
 	}
 	.Hallo{
-		width: 80%;
+		width: 90%;
+		height: 143%;
 		margin-top: -460px;
 		background-color: #000;
+		position: absolute;
 	}
 	#direita{
 		float: none;
 		width: 100%;
+		display: block;
 	}
 
 	.foto{
