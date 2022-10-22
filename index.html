@@ -191,7 +191,7 @@
 	var negat1 = window.document.getElementById("negativo1"); //menu Mobile
 	var menuTrigger = window.document.getElementById("menuTrigger");
 	var xx = window.document.getElementById("direita");
-	//var fot = window.document.getElementById("foto");
+	var carousel = window.document.getElementById("carouselExampleIndicators");
 
 	/*area de funçoes*/
 
@@ -245,6 +245,7 @@
 		//xx.style.width = "100%"
 		//xx.style.transition="1.5s"
 		sayHello.style.opacity="0"
+		carousel.style.display="inline-block"
 
 	}
 
@@ -255,6 +256,8 @@
 		//sayHello.style.marginLeft="55px"
 		sayHello.style.opacity="1"
 		sayHello.style.transition="4s"
+		carousel.style.display="none"
+		carousel.style.transition="4s"
 	}
 
 	function enviar(){
