@@ -554,7 +554,7 @@ marquee{
 }
 
 .Hallo{
-	background-color:rgba(0,0,0,.8);
+	background-color:rgba(0,0,0,.5);
 	width:30%;
 	height: 100%;
 	float: left;
@@ -623,6 +623,93 @@ marquee{
 	box-shadow: 0px 3px 3px #fbc304;
 	background-color: rgba(255,255,255,.2);
 }
+
+.Hallo .Segundo span{
+	display: block;
+	/*margin: 4px;*/
+	background-color:rgba(0, 0, 0, 0.623);
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0px 1px 2px #fbc304;
+}
+.span-1{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 130px;
+	transition: 0.5s;
+}
+.span-1:hover{
+	margin-left:3px;
+}
+
+
+.span-2{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 160px;
+	transition: 0.5s;
+}
+.span-2:hover{
+	margin-left:3px;
+}
+
+
+.span-3{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 190px;
+	transition: 0.5s;
+}
+.span-3:hover{
+	margin-left:3px;
+}
+
+
+.span-4{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 220px;
+	transition: 0.5s;
+}
+.span-4:hover{
+	margin-left:3px;
+}
+
+
+.span-5{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 250px;
+	transition: 0.5s;
+}
+.span-5:hover{
+	margin-left:3px;
+}
+
+
+.span-6{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 280px;
+	transition: 0.5s;
+}
+.span-6:hover{
+	margin-left:3px;
+}
+
+
+
+.span-7{
+	margin-left:15px;
+	margin-bottom: 4px;
+	width: 310px;
+	transition: 0.5s;
+}
+.span-7:hover{
+	margin-left:3px;
+}
+
+
 .btn{
 	text-align: center;
 	margin: auto;
