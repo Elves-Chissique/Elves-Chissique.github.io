@@ -79,15 +79,58 @@
 					<!--Aqui entra a foto da pagina inicial-->
 					<img src="assets/Fundo-Perfil.png" alt="Foto Elves">
 				</div>
-				<h1 id="brand">Elves Chissique</h1>
-				<p class="intro-text">
-					<!-- Analista de BI e Professor de Programação 
-					🎓 Developer • Teacher • IT Professional 🎓-->
-					🎓Systems Analyst and  IT Developer🎓
+				<div id="nomeSeta">
+					<h1 id="brand">Elves Chissique</h1>
+					<p class="intro-text">
+						<!-- Analista de BI e Professor de Programação
+						🎓 Developer • Teacher • IT Professional 🎓-->
+						🎓Systems Analyst and  IT Developer🎓
+					</p>
+					<a href="#pageid" class="btn btn-circle page-scroll">
+					<i class="fa fa-angle-double-down animated"></i>
+					</a>
+				</div>
+				<p id="divFlutuante1" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan1()">X</span> <br> 
+						<span>
+							Você não precisa estar em todos os lugares para ser visto. garantirei que seu site esteja usando os canais e plataformas digitais certos. E acima de tudo que seja muito resnposivo em todos os dispositivos, para alcançar, conectar e se comunicar com seu mercado para atingir suas metas de marketing online.
+						</span>
 				</p>
-				<a href="#pageid" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-				</a>
+				<p id="divFlutuante2" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan2()" >X</span> <br>
+					<span>
+						Sistemas Web dinâmicos desenvolvidos para atender colégios, universidades, instituições de pós-graduação, entre outros setores da educação: durante o período de pouco mais de um ano, venho trabalhando nesta empresa fantástica, visionária e inovadora, estou me referindo à SETA SISTEMAS, liderada pelo empresário  
+					</span>
+				</p>
+				<p id="divFlutuante3" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan3()" >X</span> <br>
+					<span>
+						Eu e a minha equipe, alinhamos a estratégia de conteúdo com as metas de negócios para compartilhar seu propósito por meio de conteúdo significativo, narrativa e redação baseada em ação. Nós também colabora regularmente com um conjunto de fotógrafos e cinegrafistas selecionados para produzir visuais poderosos para aprimorar o posicionamento da sua marca.
+					</span>
+				</p>
+				<p id="divFlutuante4" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan4()" >X</span> <br>
+					<span>
+						Sistemas Web dinâmicos desenvolvidos para atender colégios, universidades, instituições de pós-graduação, entre outros setores da educação: durante o período de pouco mais de um ano, venho trabalhando nesta empresa fantástica, visionária e inovadora, estou me referindo à SETA SISTEMAS, liderada pelo empresário  
+					</span>
+				</p>
+				<p id="divFlutuante5" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan5()" >X</span> <br>
+					<span>
+						 Sistemas Web dinâmicos desenvolvidos para atender colégios, universidades, instituições de pós-graduação, entre outros setores da educação: durante o período de pouco mais de um ano, venho trabalhando nesta empresa fantástica, visionária e inovadora, estou me referindo à SETA SISTEMAS, 
+				</p>
+				<p id="divFlutuante6" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan6()" >X</span> <br>
+					<span>
+						Sistemas Web dinâmicos desenvolvidos para atender colégios, universidades, instituições de pós-graduação, entre outros setores da educação: durante o período de pouco mais de um ano, venho trabalhando nesta empresa fantástica, visionária e inovadora, estou me referindo 
+					</span>
+				</p>
+				<p id="divFlutuante7" class="div-flutuante">
+					<span class="x" onclick="ocultarSpan7()" >X</span> <br>
+					<span>
+						Sistemas Web dinâmicos desenvolvidos para atender colégios, universidades, instituições de pós-graduação, entre outros setores da educação: durante o período de pouco mais de um ano, venho trabalhando nesta empresa fantástica, visionária e inovadora, estou me referindo 
+				</p>
+
 			</div>
 		</div>
 	</div>
@@ -127,26 +170,27 @@
 		<p class="Primerio">
 			Desenvolvidor <br> Front-End & Back-End
 		</p>
-		<p class="Segundo">
-			<span class="span-1">
+		<p id="Segundo" class="Segundo">
+			
+			<span onclick="mostrarSpan1()" class="span-1">
 				🎓Web sites
 			</span>
-			<span class="span-2">
+			<span  onclick="mostrarSpan2()"class="span-2">
 				🎓Web Systems
 			</span>
-			<span class="span-3">
+			<span  onclick="mostrarSpan3()" class="span-3">
 				🎓Graphic Design
 			</span>
-			<span class="span-4">
+			<span  onclick="mostrarSpan4()" class="span-4">
 				🎓Branding Strategy
 			</span>
-			<span class="span-5">
+			<span  onclick="mostrarSpan5()" class="span-5">
 				🎓Mobile Application
 			</span>
-			<span class="span-6">
+			<span  onclick="mostrarSpan6()" class="span-6">
 				🎓Desktop Application
 			</span>
-			<span class="span-7">
+			<span  onclick="mostrarSpan7()" class="span-7">
 				🎓E-commerce & portfolio
 			</span>
 		</p>
@@ -213,6 +257,19 @@
 	var xx = window.document.getElementById("direita");
 	var carousel = window.document.getElementById("carouselExampleIndicators");
 
+	var firstSpan = window.document.getElementById("divFlutuante1");
+	var secondSpan = window.document.getElementById("divFlutuante2");
+	var thirdSpan = window.document.getElementById("divFlutuante3");
+	var fourthSpan = window.document.getElementById("divFlutuante4");
+	var fiveSpan = window.document.getElementById("divFlutuante5");
+	var sixSpan = window.document.getElementById("divFlutuante6");
+	var sevenSpan = window.document.getElementById("divFlutuante7");
+	var divSegundo = window.document.getElementById("Segundo");
+
+	var nomeSeta = window.document.getElementById("nomeSeta");
+
+	
+
 	/*area de funçoes*/
 
 	function fecharPositivo(){
@@ -239,6 +296,139 @@
 		xx.style.transition="1.5s"
 		sayHello.style.opacity="0"
 
+		// Divs flotuantes
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="0"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+
+	}
+
+	// Chamada de funções de spns / Divs Flutuantes
+
+	function mostrarSpan1(){
+		firstSpan.style.opacity="1"
+		firstSpan.style.transition="1s"
+		secondSpan.style.opacity="0"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+		
+	}
+
+	function ocultarSpan1(){
+		firstSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	
+
+		
+	}
+
+	function mostrarSpan2(){
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="1"
+		secondSpan.style.transition="1s"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+	}
+
+	function ocultarSpan2(){
+		secondSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	}
+
+	function mostrarSpan3(){
+		firstSpan.style.opacity="0"
+		thirdSpan.style.transition="1s"
+		secondSpan.style.opacity="0"
+		thirdSpan.style.opacity="1"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+	}
+
+	function ocultarSpan3(){
+		thirdSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	}
+
+	function mostrarSpan4(){
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="0"
+		fourthSpan.style.transition="1s"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="1"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+
+	}
+
+	function ocultarSpan4(){
+		fourthSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	}
+	function mostrarSpan5(){
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="0"
+		fiveSpan.style.transition="1s"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="1"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+	}
+
+	function ocultarSpan5(){
+		fiveSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	}
+	function mostrarSpan6(){
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="0"
+		sixSpan.style.transition="1s"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="1"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+
+	}
+
+	function ocultarSpan6(){
+		sixSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
+	}
+	function mostrarSpan7(){
+		firstSpan.style.opacity="0"
+		sevenSpan.style.transition="1s"
+		secondSpan.style.opacity="0"
+		thirdSpan.style.opacity="1"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="1"
+		nomeSeta.style.opacity="0"
+	}
+
+	function ocultarSpan7(){
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="1"
 	}
 
 // Aqui começa as funções para o botão de menu para Mobile

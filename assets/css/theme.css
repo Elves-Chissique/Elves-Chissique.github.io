@@ -610,6 +610,69 @@ marquee{
 	align-items: center;
 }
 
+.div-flutuante{
+	background-color:rgb(97, 247, 4);
+	position:absolute;
+	height:30%;
+	margin:auto;
+	margin-top:-215px;
+	width:100%;
+	opacity: 0;
+	border-radius:25px;
+	border:2px solid #fff;
+	overflow:hidden;
+	color: red;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: small;
+}
+.div-flutuante span{
+	margin-top: 10px;
+	color:white;
+	background-color:rgb(0, 0, 0);
+	width: 100%;
+	display: block;
+	border-top:2px solid white;
+	text-align: justify;
+	padding: 5px;
+	
+}
+
+.div-flutuante .x{
+	color:red;
+	border: 1px solid red;
+	display:inline;
+	padding:5px 10px 5px 10px;
+	border-radius:50%;
+	margin:10px;
+	cursor:pointer;
+	transition:0.5s;
+}
+
+/*.div-flutuante .x:hover{
+	background-color:rgba(255, 255, 255, 0.3);
+}
+
+#divFlutuante2{
+	background-color: coral;
+	
+}
+#divFlutuante3{
+	background-color:blueviolet;
+}
+#divFlutuante4{
+	background-color:#ccc;
+}
+#divFlutuante5{
+	background-color:#22292c;
+
+}
+#divFlutuante6{
+	background-color:#d3ab27;
+}
+#divFlutuante7{
+	background-color:rgb(105, 69, 177);
+}*/
 
 .Hallo .Segundo{
 	font-family: 'Bona Nova', serif;
@@ -758,6 +821,16 @@ marquee{
 	.Hallo .Primerio{
 		margin-top: 0%;
 	}
+
+	.div-flutuante{
+		margin-top:-230px;
+		font-size:large;
+		height:50%;
+	}
+	.div-flutuante .x{
+		padding:5px 14px 5px 14px;
+	}
+	
 	.Hallo .Primerio{
 		font-size: 2.1em;
 	}
