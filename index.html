@@ -74,7 +74,7 @@
 <div class="intro-body">
 	<div class="container">
 		<div id="direita" class="row justify-content-center">
-			<div class="col-md-8">
+			<div onclick="tirar()" class="col-md-8">
 				<div id="foto" class="foto">
 					<!--Aqui entra a foto da pagina inicial-->
 					<img src="assets/Fundo-Perfil.png" alt="Foto Elves">
@@ -170,40 +170,41 @@
 		<p class="Primerio">
 			Desenvolvidor <br> Front-End & Back-End
 		</p>
-		<p id="Segundo" class="Segundo">
+		<div id="Segundo" class="Segundo">
+			<p id="Say">
+				<input type="text" placeholder="Your name here">
+				<input type="text" placeholder="Hello, Elves! are you there?">
+				<input id="email" type="email" placeholder="write your email">
+				<br/>
+				<a onclick="enviar()" href=""><img src="assets/btn-enviar.png" alt="enviar"></a>
+			</p>
 			
-			<span onclick="mostrarSpan1()" class="span-1">
+			<span onclick="mostrarSpan1()" id="span1">
 				🎓Web sites
 			</span>
-			<span  onclick="mostrarSpan2()"class="span-2">
+			<span  onclick="mostrarSpan2()"id="span2">
 				🎓Web Systems
 			</span>
-			<span  onclick="mostrarSpan3()" class="span-3">
+			<span  onclick="mostrarSpan3()" id="span3">
 				🎓Graphic Design
 			</span>
-			<span  onclick="mostrarSpan4()" class="span-4">
+			<span  onclick="mostrarSpan4()" id="span4">
 				🎓Branding Strategy
 			</span>
-			<span  onclick="mostrarSpan5()" class="span-5">
+			<span  onclick="mostrarSpan5()" id="span5">
 				🎓Mobile Application
 			</span>
-			<span  onclick="mostrarSpan6()" class="span-6">
+			<span  onclick="mostrarSpan6()" id="span6">
 				🎓Desktop Application
 			</span>
-			<span  onclick="mostrarSpan7()" class="span-7">
+			<span  onclick="mostrarSpan7()" id="span7">
 				🎓E-commerce & portfolio
 			</span>
-		</p>
-
+		</div>
+		<br>
+		<br>
 		<p class="btn">
-			<button onclick="Chamada()" class="btn btn-outline-warning">Say Hello</button>
-		</p>
-
-		<p id="Say">
-			<input type="text" placeholder="Hello, Elves! are you ther?">
-			<input id="email" type="email" placeholder="write your email">
-			<br/>
-			<a onclick="enviar()" href=""><img src="assets/btn-enviar.png" alt="enviar"></a>
+			<button id="btn" onclick="Chamada()" class="btn btn-outline-warning">Say Hello</button>
 		</p>
 	</div>
 </div>
@@ -268,6 +269,13 @@
 
 	var nomeSeta = window.document.getElementById("nomeSeta");
 
+	var span1 = window.document.getElementById("span1");
+	var span2 = window.document.getElementById("span2");
+	var span3 = window.document.getElementById("span3");
+	var span4 = window.document.getElementById("span4");
+	var span5 = window.document.getElementById("span5");
+	var span6 = window.document.getElementById("span6");
+	var span7 = window.document.getElementById("span7");
 	
 
 	/*area de funçoes*/
@@ -308,7 +316,6 @@
 	}
 
 	// Chamada de funções de spns / Divs Flutuantes
-
 	function mostrarSpan1(){
 		firstSpan.style.opacity="1"
 		firstSpan.style.transition="1s"
@@ -323,13 +330,25 @@
 	}
 
 	function ocultarSpan1(){
-		firstSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		firstSpan.style.opacity="0.1"
+		//nomeSeta.style.opacity="1"
 	
 
 		
 	}
 
+	function tirar(){
+		firstSpan.style.opacity="0"
+		secondSpan.style.opacity="0"
+		thirdSpan.style.opacity="0"
+		fourthSpan.style.opacity="0"
+		fiveSpan.style.opacity="0"
+		sixSpan.style.opacity="0"
+		sevenSpan.style.opacity="0"
+		nomeSeta.style.opacity="0"
+
+		nomeSeta.style.opacity="1"
+	}
 	function mostrarSpan2(){
 		firstSpan.style.opacity="0"
 		secondSpan.style.opacity="1"
@@ -344,7 +363,7 @@
 
 	function ocultarSpan2(){
 		secondSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		//nomeSeta.style.opacity="1"
 	}
 
 	function mostrarSpan3(){
@@ -361,7 +380,7 @@
 
 	function ocultarSpan3(){
 		thirdSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		//nomeSeta.style.opacity="1"
 	}
 
 	function mostrarSpan4(){
@@ -379,7 +398,7 @@
 
 	function ocultarSpan4(){
 		fourthSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		//nomeSeta.style.opacity="1"
 	}
 	function mostrarSpan5(){
 		firstSpan.style.opacity="0"
@@ -395,7 +414,7 @@
 
 	function ocultarSpan5(){
 		fiveSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		//nomeSeta.style.opacity="1"
 	}
 	function mostrarSpan6(){
 		firstSpan.style.opacity="0"
@@ -412,7 +431,7 @@
 
 	function ocultarSpan6(){
 		sixSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		//nomeSeta.style.opacity="1"
 	}
 	function mostrarSpan7(){
 		firstSpan.style.opacity="0"
@@ -427,8 +446,8 @@
 	}
 
 	function ocultarSpan7(){
-		sevenSpan.style.opacity="0"
-		nomeSeta.style.opacity="1"
+		sevenSpan.style.opacity="0.1"
+		//nomeSeta.style.opacity="1"
 	}
 
 // Aqui começa as funções para o botão de menu para Mobile
@@ -465,10 +484,30 @@
 	function Chamada(){
 		//sayHello.style.marginLeft="55px"
 		sayHello.style.opacity="1"
-		sayHello.style.transition="4s"
+		sayHello.style.marginTop="5%"
+		sayHello.style.transition="7s"
+		span1.style.marginLeft="150%"
+		span2.style.marginLeft="150%"
+		span3.style.marginLeft="150%"
+		span4.style.marginLeft="150%"
+		span5.style.marginLeft="150%"
+		span6.style.marginLeft="150%"
+		span7.style.marginLeft="150%"
+
+		span1.style.transition="6s"
+		span2.style.transition="5.5s"
+		span3.style.transition="5s"
+		span4.style.transition="4.5s"
+
+		span5.style.transition="4s"
+		span6.style.transition="3.5s"
+		span7.style.transition="3s"
 		//carousel.style.display="none"
 		//carousel.style.transition="4s"
 	}
+
+	//Saida de botoes para lado esquero
+
 
 	function enviar(){
 		alert('Caríssimo/a a sua mensagem foi com sucesso enviada, em breve o será respondida <br/> Dear your message have been successfully sent, and will be answered shortly')

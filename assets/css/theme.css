@@ -621,7 +621,6 @@ marquee{
 	border-radius:25px;
 	border:2px solid #fff;
 	overflow:hidden;
-	color: red;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	font-size: small;
@@ -685,6 +684,7 @@ marquee{
 	border-radius: 2em;
 	box-shadow: 0px 3px 3px #fbc304;
 	background-color: rgba(255,255,255,.2);
+	overflow: hidden;
 }
 
 .Hallo .Segundo span{
@@ -695,80 +695,80 @@ marquee{
 	cursor: pointer;
 	box-shadow: 0px 1px 2px #fbc304;
 }
-.span-1{
+#span1{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 130px;
 	transition: 0.5s;
 }
-.span-1:hover{
+#span1:hover{
 	margin-left:3px;
 }
 
 
-.span-2{
+#span2{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 160px;
 	transition: 0.5s;
 }
-.span-2:hover{
+#span2:hover{
 	margin-left:3px;
 }
 
 
-.span-3{
+#span3{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 190px;
 	transition: 0.5s;
 }
-.span-3:hover{
+#span3:hover{
 	margin-left:3px;
 }
 
 
-.span-4{
+#span4{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 220px;
 	transition: 0.5s;
 }
-.span-4:hover{
+#span4:hover{
 	margin-left:3px;
 }
 
 
-.span-5{
+#span5{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 250px;
 	transition: 0.5s;
 }
-.span-5:hover{
+#span5:hover{
 	margin-left:3px;
 }
 
 
-.span-6{
+#span6{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 280px;
 	transition: 0.5s;
 }
-.span-6:hover{
+#span6:hover{
 	margin-left:3px;
 }
 
 
 
-.span-7{
+#span7{
 	margin-left:15px;
 	margin-bottom: 4px;
 	width: 310px;
 	transition: 0.5s;
 }
-.span-7:hover{
+#span7:hover{
 	margin-left:3px;
 }
 
@@ -783,7 +783,7 @@ marquee{
 
 .Hallo input{
 
-	width: 70%;
+	width: 90%;
 	margin-top: 0.5%;
 	background-color: rgba(255, 255, 255, 0.0);
 	border-top: rgba(0, 0, 0, 0.0);
@@ -791,20 +791,27 @@ marquee{
 	border-right: rgba(0, 0, 0, 0.0);
 	border-bottom:2px solid #fbc304;
 	border-radius: 15px;
-	color:#ccc;
+	color:#fff;
 	transition: 1s;
 	outline: none;
 	text-align: center;
 	font-size: 15px;
 	opacity: 1;
+	margin: 2%;
 
+}
+
+::placeholder{
+	color:#fff;
 }
 
 #Say{
 	width: 100%;
 	margin: auto;
-	opacity: 0;
 	text-align: center;
+	position: absolute;
+	margin-top:100%;
+	margin-left:-10px;
 	
 }
 
@@ -814,7 +821,7 @@ marquee{
 }
 
 .Hallo input:hover{
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 /*Rensponsavidade por media querie --NESTE PONOT PARA PLASMAS E MUNITORES GRANDES*/
 @media(min-width:1420px){
