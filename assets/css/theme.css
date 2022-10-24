@@ -648,7 +648,7 @@ marquee{
 	transition:0.5s;
 }
 
-/*.div-flutuante .x:hover{
+.div-flutuante .x:hover{
 	background-color:rgba(255, 255, 255, 0.3);
 }
 
@@ -671,7 +671,7 @@ marquee{
 }
 #divFlutuante7{
 	background-color:rgb(105, 69, 177);
-}*/
+}
 
 .Hallo .Segundo{
 	font-family: 'Bona Nova', serif;
