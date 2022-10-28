@@ -528,15 +528,38 @@ marquee{
 .foto{
 	background-color: rgba(0,0,0,0.0);
 	position: relative;
-	width: 300px;
-	height: 300px;
 	margin: auto;
-	margin-top:5em;
-	opacity: 0.5;
+	margin-top:1em;
 	transition: 1s;
+	background-image: url("../bg-explore.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 65px;
+	height:400px;
+	width:244 ;
 }
-.foto:hover{
-	opacity: 1;
+
+
+.foto img{
+	
+	width: 150px;
+	height: 150px;
+}
+
+
+.foto p{
+	background-color: #fbc104c5;
+	width: 150px;
+	margin: auto;
+	margin-top: 70px;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.2s;
+	font-weight: bolder;
+}
+
+.foto p:hover{
+	background-color:#ccc;
 }
 
 #brand{

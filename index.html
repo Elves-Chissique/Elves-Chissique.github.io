@@ -77,7 +77,8 @@
 			<div onclick="tirar()" class="col-md-8">
 				<div id="foto" class="foto">
 					<!--Aqui entra a foto da pagina inicial-->
-					<img src="assets/Fundo-Perfil.png" alt="Foto Elves">
+					<img onmouseover="perifil2()" onmouseout="perfil1()" id="fotoPerfil" src="assets/Perfil-1.png" alt="">
+					<p>Get in touch</p>
 				</div>
 				<div id="nomeSeta">
 					<h1 id="brand">Elves Chissique</h1>
@@ -276,9 +277,21 @@
 	var span5 = window.document.getElementById("span5");
 	var span6 = window.document.getElementById("span6");
 	var span7 = window.document.getElementById("span7");
+
+	var fotoPerfil = window.document.getElementById("fotoPerfil")
 	
 
 	/*area de funçoes*/
+
+	function perifil2(){
+		fotoPerfil.src="assets/Perfil-2.png"
+		fotoPerfil.style.transition="2s"
+	}
+
+	function perfil1(){
+		fotoPerfil.src="assets/Perfil-1.png"
+		fotoPerfil.style.transition="6s"
+	}
 
 	function fecharPositivo(){
 		ocultar.style.marginLeft = "0%"
