@@ -536,7 +536,7 @@ marquee{
 	background-position: center;
 	padding-top: 65px;
 	height:400px;
-	width:244 ;
+	width:600px;
 }
 
 
@@ -560,6 +560,11 @@ marquee{
 
 .foto p:hover{
 	background-color:#ccc;
+}
+
+.foto a{
+	text-decoration: none;
+	
 }
 
 #brand{
